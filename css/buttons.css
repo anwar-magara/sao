@@ -1,0 +1,52 @@
+a{
+  text-decoration: none;
+}
+.button{
+  color: #fff;
+  padding: 10px 20px;
+  text-transform: capitalize;
+  text-align: center;
+  background: #3777bc;
+}
+.extended-button{
+  color: #fff;
+  padding: 10px 90px;
+  text-transform: capitalize;
+  text-align: center;
+  background: #3777bc;
+}
+.round-button{
+  color: #fff;
+  padding: 10px 20px;
+  text-transform: capitalize;
+  text-align: center;
+  background: #3777bc;
+  border-radius: 250em;
+}
+.group-button{
+  list-style: none;
+  margin: 0;
+  left: 0;
+}
+.group-button::after{
+  content: '';
+  display: block;
+}
+.group-button > li {
+    float: left;
+    display: inline-block;
+    margin: 0 1px;
+}
+.rounded{
+  list-style: none;
+  margin: 0;
+  left: 0;
+}
+.rounded-first{
+  border-bottom-left-radius: 125em;
+  border-top-left-radius: 125em;
+}
+.rounded-last{
+  border-bottom-right-radius: 125em;
+  border-top-right-radius: 125em;
+}

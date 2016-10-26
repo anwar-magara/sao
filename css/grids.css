@@ -1,0 +1,166 @@
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body,html{
+  height:100%;
+  width:100%
+}
+body{
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+}
+a {
+  -webkit-transition: all 0.35s;
+  -moz-transition: all 0.35s;
+  transition: all 0.35s;
+  color: #F05F40;
+}
+a:hover,
+a:focus {
+  color: #eb3812;
+}
+h1{
+  text-transform: uppercase;
+}
+h2{
+  text-transform: capitalize;
+}
+p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+p {
+  display: block;
+  -webkit-margin-before: 1em;
+  -webkit-margin-after: 1em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+}
+section {
+  padding: 100px 0;
+}
+aside {
+  padding: 50px 0;
+}
+.clr:after {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+  zoom: 1;
+}
+.section {
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+}
+.group:before,
+.group:after {
+    content:"";
+    display:table;
+}
+.group:after {
+    clear:both;
+}
+.group {
+    zoom:1; /* For IE 6/7 (trigger hasLayout) */
+}
+/*-------------------------------------------------------------
+                        row and colum
+-------------------------------------------------------*/
+
+.row{
+  width: 100%;
+  min-height: 1px;
+  padding: 0;
+  /*margin: 20px 0;*/
+}
+
+
+.col-1 {
+  border-radius: .28571429rem;
+  display: inline-block;
+  margin: 0.5% 0 0.5% 1.6%;
+  float: left;
+}
+.col-1:last-child {
+  margin-right: 0;
+}
+.col-1:first-child {
+  margin-left: 0;
+}
+
+.left{
+  width: 50%;
+  float: left;
+  position: relative;
+  bottom: 12px;
+}
+.right{
+  width: 50%;
+  float: right;
+  position: relative;
+  bottom: 12px;
+}
+/*-------------------------------------------------------------
+                        mediums
+-------------------------------------------------------*/
+
+.medium-1{
+  width: 95%;
+  min-width: 240px;
+  margin: 0 auto;
+}
+/*-------------------------------------------------------------
+                        grids
+-------------------------------------------------------*/
+.grid{
+  color: #fff;
+  background: #ccc;
+  border-radius: .28571429rem;
+  padding: 10px;
+  text-align: center;
+  text-transform: capitalize;
+}
+.grid-1{
+  width: 100%;
+}
+.grid-2{
+  width: 49.2%;
+}
+.grid-3{
+  width: 32.26%;
+}
+.grid-4{
+  width: 23.8%;
+}
+.grid-5{
+  width: 18.72%;
+}
+.grid-6{
+  width: 15.33%;
+}
+.grid-7{
+  width: 12.91%;
+}
+.grid-8{
+  width: 11.1%;
+}
+.grid-9{
+  width: 9.68%;
+}
+.grid-10{
+  width: 8.56%;
+}
+.grid-11{
+  width: 7.63%;
+}
+.grid-12{
+  width: 6.86%;
+}

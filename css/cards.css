@@ -1,0 +1,88 @@
+.card{
+  width: 100%;
+  min-height: 0;
+  background: #FFF;
+  padding: 0;
+  float: none;
+  max-width: 100%; */
+  position: relative;
+  border: none;
+  border-radius: .28571429rem;
+  box-shadow: 0 1px 3px 0 #D4D4D5,0 0 0 1px #D4D4D5;
+}
+.card-single{
+  width: 290px;
+  min-height: 0;
+  background: #FFF;
+  padding: 0;
+  float: none;
+  max-width: 100%; */
+  position: relative;
+  border: none;
+  border-radius: .28571429rem;
+  box-shadow: 0 1px 3px 0 #D4D4D5,0 0 0 1px #D4D4D5;
+}
+.card > .image {
+    position: relative;
+    display: block;
+    padding: 0;
+    border-radius: .28571429rem;
+    background: rgba(0,0,0,.05);
+}
+.card>:first-child {
+    border-radius: .28571429rem .28571429rem 0 0!important;
+    border-top: none!important;
+}
+.card>.image>img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: inherit;
+}
+.card>.content{
+  border: none;
+  border-top: 1px solid rgba(34,36,38,.1);
+  background: 0 0;
+  margin: 0;
+  padding: 1em;
+  box-shadow: none;
+  font-size: 1em;
+  border-radius: 0;
+}
+.card>.content>.heading{
+ padding: 0px;
+ font-size: 15px;
+ color: #404040;
+ text-align: left;
+ text-transform: capitalize;
+}
+.card>.content>.s-info{
+  color: #D4D4D5;
+  font-size: 13px;
+  font-weight: 300;
+  padding: 10px 0;
+}
+.card>.content>.card-info{
+  padding: 1em 0;
+  border-top: 1px solid rgba(34,36,38,.1);
+  border-radius: none;
+}
+.card-info p{
+  color: #D4D4D5;
+  font-size: 15px;
+}
+.card-info .right p{
+  text-align: right;
+}
+.user-image{
+  float: left;
+}
+.user-image img{
+  width: 40px;
+  height: 40px;
+  border-top: 1px solid rgba(34,36,38,.1);
+  border-radius: 500em;
+}
+.right .user-image{
+  float: right;
+}
