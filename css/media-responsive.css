@@ -53,7 +53,7 @@ grids
  }
 /*// Medium screens*/
  /* min-width 641px, medium screens */
-@media only screen and (min-width: 40.063em) {}
+@media only screen and (min-width: 40.063em) { }
 
 @media only screen and (min-width: 40.063em) and (max-width: 64em) { } /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
 
@@ -97,7 +97,20 @@ navigation
   }*/
  }
 /*// Medium screens*/
-@media only screen and (min-width: 40.063em) { } /* min-width 641px, medium screens */
+@media only screen and (min-width: 40.063em) {
+  .navbar-nav{
+    height: auto;
+    overflow: hidden;
+    transition: all 0.7s;
+  }
+  .open{
+    /*height: 237px;*/
+    height: auto;
+  }
+  .dropdown-menu > li {
+    display: block;;
+    float: none;
+  }
 
 @media only screen and (min-width: 40.063em) and (max-width: 64em) { } /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
 
@@ -116,7 +129,29 @@ another thing
 =================*/
 
 /* max-width 640px, mobile-only styles, use when QAing mobile issues */
-@media only screen and (max-width: 40em) { }
+@media only screen and (max-width: 40em) {
+  .bg-image{
+    /*min-height: auto;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    background-position: center;
+    color: #fff;*/
+    width: 100%;
+    height: 750px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    top: 0;
+    background-image: url(../assets/images/background.png);
+    margin: 60px 0 0 0;
+  }
+  .bg-image {
+      min-height: 100%;
+  }
+}
 /*// Medium screens*/
 @media only screen and (min-width: 40.063em) { } /* min-width 641px, medium screens */
 
