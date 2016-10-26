@@ -18,6 +18,7 @@
 }
 .nav-background{
   background: #C87769;
+  box-shadow: 0px 4px 10px #404040;
 }
 .container-fluid {
   padding-right: 15px;

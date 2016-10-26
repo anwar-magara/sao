@@ -70,11 +70,16 @@ banner
   padding: 15px;
 }
 .header-info{
-  width: 900px;
+  width: 700px;
   margin: 0 auto;
   padding: 40px;
   font-size: 16pt;
   color: #8C8A8A;
+  letter-spacing: 3px;
+}
+.header-info p{
+  position: relative;
+  left: 125px;
 }
 /*-------------------------
 banner

@@ -48,8 +48,8 @@
 
                     <div class="navigation">
                       <ul class="dropdown-menu menu nav navbar-nav navbar-right">
-                        <li><a href="#">home</a></li>
-                        <li><a href="#">portfolio</a></li>
+                        <li><a href="#top">home</a></li>
+                        <li><a href="#portfolio">portfolio</a></li>
                         <li><a href="#">book an appointment</a></li>
                         <li><a href="#">conact us</a></li>
                       </ul>
@@ -118,7 +118,7 @@
 
             <div class="row">
               <div class="bg-scroll">
-                <a href="#"class="scroll"><span><i class="fa fa-angle-double-down" aria-hidden="true">scroll</i></span></a>
+                <a href="#portfolio"class="scroll"><span><i class="fa fa-angle-double-down" aria-hidden="true">scroll</i></span></a>
               </div>
             </div>
 
@@ -140,7 +140,7 @@
         <div class="row">
           <div class="header-info">
             <p>
-              we'd like you to see our designs
+              We'd like you to see our designs
             </p>
           </div>
         </div>
@@ -161,5 +161,52 @@
 
     </div>
 
+    <script type="text/javascript" src="js/jquery.js"></script>
+
+    <!-- smooth scroll -->
+
+    <script>
+      $(document).ready(function(){
+        // Add smooth scrolling to all links
+        $("a").on('click', function(event) {
+
+          if (this.hash !== "#portfolio , #top , #scroll") {
+            // Prevent default anchor click behavior
+            event.preventDefault();
+
+            // Store hash
+            var hash = this.hash;
+
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+            $('html, body').animate({
+              scrollTop: $(hash).offset().top
+            }, 2000, function(){
+
+              // Add hash (#) to URL when done scrolling (default click behavior)
+              window.location.hash = hash;
+            });
+          } // End if
+
+          if (this.hash !== "#back-to-top , #top") {
+            // Prevent default anchor click behavior
+            event.preventDefault();
+
+            // Store hash
+            var hash = this.hash;
+
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+            $('html, body').animate({
+              scrollTop: $(hash).offset().top
+            }, 800, function(){
+
+              // Add hash (#) to URL when done scrolling (default click behavior)
+              window.location.hash = hash;
+            });
+          } // End if
+        });
+      });
+    </script>
   </body>
 </html>
