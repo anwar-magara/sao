@@ -114,7 +114,26 @@ aside {
 
 .medium-1{
   width: 95%;
-  min-width: 240px;
+  margin: 0 auto;
+}
+.medium-2{
+  width: 85%;
+  margin: 0 auto;
+}
+.medium-3{
+  width: 75%;
+  margin: 0 auto;
+}
+.medium-4{
+  width: 65%;
+  margin: 0 auto;
+}
+.medium-5{
+  width: 55%;
+  margin: 0 auto;
+}
+.medium-6{
+  width: 50%;
   margin: 0 auto;
 }
 /*-------------------------------------------------------------
