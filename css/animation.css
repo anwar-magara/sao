@@ -1,0 +1,54 @@
+/*=========== pulse ================*/
+
+.pulseit{
+	-webkit-animation: pulse linear .5s infinite;
+	animation: pulse linear .5s infinite;
+}
+@-webkit-keyframes pulse {
+	0% { width:10%; }
+	50% { width:11%; }
+	100% { width:10%; }
+}
+@keyframes pulse {
+	0% { width:10%; }
+	50% { width:11%; }
+	100% { width:10%; }
+}
+
+
+/*============ floating ============*/
+
+
+.floatit{
+  position: relative;
+  -webkit-animation: float linear 1s infinite;
+  animation: float linier 1s infinite;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+}
+@-webkit-keyframes float {
+  0% {top: 0;}
+  50% { top: 10px}
+	100% { top: 20px;; }
+}
+@keyframes scroll {
+  0% {top: 0;}
+  50% { top: 10px}
+	100% { top: 20px;; }
+}
+
+
+/*========== droping =============*/
+
+
+.dropit{
+  margin-top: -400px;
+  -webkit-animation: drop ease 1s forwards;
+  animation: drop ease 1s forwards;
+}
+@keyframes drop {
+  0% {opacity: 0;}
+  70% {transform: : translateY(700px);}
+  75% {transition: translateY(650px);}
+  100% {transition: transformY(700px); opacity: 1;}
+}

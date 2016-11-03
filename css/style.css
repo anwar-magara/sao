@@ -64,9 +64,19 @@ banner
   position: relative;
   left: 318px;
 }
+.scroll img{
+  width: 10%;
+  -ms-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg); 
+  transform: rotate(180deg);
+}
+/*-------------------------
+designs
+-------------------------*/
+
 .designs{
   width: 100%;
-  background: #fff;
+  background: #e5e5e5;
   padding: 15px;
 }
 .header-info{
@@ -81,6 +91,3 @@ banner
   position: relative;
   left: 125px;
 }
-/*-------------------------
-banner
--------------------------*/

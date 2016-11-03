@@ -111,7 +111,7 @@ navigation
     display: block;;
     float: none;
   }
-
+}
 @media only screen and (min-width: 40.063em) and (max-width: 64em) { } /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
 
 /*// Large screens*/
@@ -150,6 +150,18 @@ another thing
   }
   .bg-image {
       min-height: 100%;
+  }
+  .header-info {
+    width: 100%;
+    margin: 0 auto;
+    padding: 40px;
+    font-size: 16pt;
+    color: #8C8A8A;
+    letter-spacing: 3px;
+  }
+  .header-info p {
+    position: relative;
+    left: -125px;
   }
 }
 /*// Medium screens*/

@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="css/cards.css" media="screen" title="no title">
     <link rel="stylesheet" href="css/style.css" media="screen" title="no title">
     <link rel="stylesheet" href="css/navigation.css" media="screen" title="no title">
+    <link rel="stylesheet" href="css/tiles.css" media="screen" title="no title">
+    <link rel="stylesheet" href="css/animation.css" media="screen" title="no title">
   </head>
   <body>
     <div class="container">
@@ -30,7 +32,7 @@
                   <!-- branding section -->
 
                   <div class="nav-brand">
-                    <a href="#" class="nav-branding"><img src="assets/images/SAO-small-logo.png" alt="sao-brand" /></a>
+                    <a href="#top" class="nav-branding"><img src="assets/images/SAO-small-logo.png" alt="sao-brand" /></a>
                   </div>
 
                   <!-- end branding section -->
@@ -118,7 +120,7 @@
 
             <div class="row">
               <div class="bg-scroll">
-                <a href="#portfolio"class="scroll"><span><i class="fa fa-angle-double-down" aria-hidden="true">scroll</i></span></a>
+                <a href="#portfolio" class="scroll"><img class="floatit" src="assets/images/mouse.png" alt="scroller-bottom" /></a>
               </div>
             </div>
 
@@ -146,7 +148,31 @@
         </div>
 
         <div class="row">
-
+          <div class="section group">
+            <div class="design-midd">
+              <div class="col-1 grid-3">
+                <div class="tile tile-height">
+                  <div class="image">
+                    <img src="assets/images/Suit1.png" alt="design-image" />
+                  </div>
+                </div>
+              </div>
+              <div class="col-1 grid-3">
+                <div class="tile">
+                  <div class="image">
+                    <img src="assets/images/Suit2.png" alt="design-image" />
+                  </div>
+                </div>
+              </div>
+              <div class="col-1 grid-3">
+                <div class="tile">
+                  <div class="image">
+                    <img src="assets/images/Suit3.png" alt="design-image" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
 
         <div class="row">
@@ -181,7 +207,7 @@
             // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
             $('html, body').animate({
               scrollTop: $(hash).offset().top
-            }, 2000, function(){
+            }, 1000, function(){
 
               // Add hash (#) to URL when done scrolling (default click behavior)
               window.location.hash = hash;
@@ -199,7 +225,7 @@
             // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
             $('html, body').animate({
               scrollTop: $(hash).offset().top
-            }, 800, function(){
+            }, 1000, function(){
 
               // Add hash (#) to URL when done scrolling (default click behavior)
               window.location.hash = hash;

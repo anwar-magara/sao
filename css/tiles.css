@@ -1,0 +1,21 @@
+.tile{
+  background: #FFF;
+  padding: 0;
+  float: none;
+  max-width: 100%;
+  position: relative;
+  border: none;
+  box-shadow: 0 1px 3px 0 #D4D4D5,0 0 0 1px #D4D4D5;
+}
+.tile > .image {
+    position: relative;
+    display: block;
+    padding: 0;
+    background: rgba(0,0,0,.05);
+}
+.tile>.image>img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: inherit;
+}
